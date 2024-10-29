@@ -41,6 +41,7 @@ body{
   padding: 20px 0;
   color: #fff;
   text-align: center;
+  background-color: transparent !important;
 }
 
 .pg-links {
@@ -98,3 +99,4 @@ body{
 .social-icons:hover {
   transform: scale(1.2);       /* Slightly enlarge the icon on hover */
 }
+
