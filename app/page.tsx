@@ -29,24 +29,25 @@ export default function Home() {
         width={435}
         height={835}
       />
-    </div>
-    <div className='icons-left'>
-        <FontAwesomeIcon icon={faYoutube} /> 
-        <FontAwesomeIcon icon={faSpotify} /> 
-        <FontAwesomeIcon icon={faSoundcloud} /> 
+      <div className='icons-left'>
+              <FontAwesomeIcon icon={faYoutube} className='social-icons' id='yt' /> 
+              <FontAwesomeIcon icon={faSpotify} className='social-icons' /> 
+              <FontAwesomeIcon icon={faSoundcloud} className='social-icons' /> 
       </div>
       <div className='icons-right'>
-        <FontAwesomeIcon icon={faFacebook} /> 
-        <FontAwesomeIcon icon={faInstagram} /> 
-        <FontAwesomeIcon icon={faTwitter} /> 
+              <FontAwesomeIcon icon={faFacebook} className='social-icons' /> 
+              <FontAwesomeIcon icon={faInstagram} className='social-icons' /> 
+              <FontAwesomeIcon icon={faTwitter} className='social-icons' /> 
       </div>
+    </div>
+
 
     <footer className='footer'>
       <nav>
         <ul className='pg-links'>
           <li><Link href='/'>HOME</Link></li>
           <li><Link href='/music'>MUSIC</Link></li>
-          <li><Link href='/shows'>SHOWS</Link></li>
+          <li><Link href='/shows'>WORKSHOPS</Link></li>
           <li><Link href='/contact'>CONTACT</Link></li>
         </ul>
      </nav>

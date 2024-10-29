@@ -46,7 +46,7 @@ body{
 .pg-links {
   display: flex;
   justify-content: center; /* Centers links horizontally */
-  gap: 30px; /* Space between the links */
+  gap: 20px; /* Space between the links */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -56,7 +56,7 @@ body{
 .pg-links li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .pg-links li a:hover {
@@ -64,37 +64,37 @@ body{
 }
 
 /* ICONS */
+/* Positioning the icon containers absolutely */
 .icons-left, .icons-right {
-  position: absolute;          /* Layered above other elements */
-  display: flex;               /* Flex layout for vertical alignment */
+  position: absolute;           /* Allow for precise positioning */
+  display: flex;               /* Use flexbox for layout */
+  gap: 1.8rem;                   /* Space between icons */
   flex-direction: column;      /* Stack icons vertically */
-  gap: 15px;                   /* Space between icons */
-  z-index: 10;                 /* Ensure icons appear above other elements */
+  z-index: 20;                 /* Ensure icons are above other content */
 }
 
-/* Position icons on the left side */
+/* Positioning for left icons */
 .icons-left {
-  top: 50%;                    /* Center vertically */
-  left: 20px;                  /* Align to the left */
-  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  bottom: 100px;                /* Position from the bottom */
+  left: 25px;                  /* Position from the left */
 }
 
-/* Position icons on the right side */
+/* Positioning for right icons */
 .icons-right {
-  top: 50%;                    /* Center vertically */
-  right: 20px;                 /* Align to the right */
-  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  bottom: 15px;                /* Position from the bottom */
+  right: 25px;                 /* Position from the right */
 }
 
-/* Styling for the Font Awesome icons */
-.icons-left .fa, .icons-right .fa {
-  font-size: 24px;             /* Set icon size */
-  color: #1DB954;              /* Primary color */
-  cursor: pointer;             /* Make icons clickable */
-  transition: transform 0.2s ease; /* Smooth scaling effect */
+/* Individual icon styles */
+.social-icons {
+  width: 1.7rem;
+  height: 1.7rem;             /* Size of the icons */
+  color: #ffffff;              /* Icon color (Spotify green) */
+  cursor: pointer;             /* Change cursor on hover */
+  transition: transform 0.2s ease; /* Animation for hover effect */
 }
 
-/* Hover effect for interactivity */
-.icons-left .fa:hover, .icons-right .fa:hover {
-  transform: scale(1.2);       /* Slightly enlarge on hover */
+/* Hover effect */
+.social-icons:hover {
+  transform: scale(1.2);       /* Slightly enlarge the icon on hover */
 }
