@@ -6,25 +6,25 @@ export default function Hero() {
   return (
     <>
         <div className='hero-section'>
-          
+          {/* logo img */}
           <Image
             className="logo-img"
             src="/logo/4.jpg"
             alt="Logo img"
-            width={260}
-            height={230}
+            width={250}
+            height={210}
           />
-
+          {/* hero */}
           <Image
             className="hero-img"
             src="/hero2.jpg"
             alt="Hero img"
-            width={435}
-            height={835}
+            width={420}
+            height={810}
           />
 
         <Social />
-</div>
+          </div>
 
     
       

@@ -11,8 +11,8 @@ export default function Page() {
         <Image 
             src="/logo/4.jpg" 
             alt="Logo"  
-            width={260}
-            height={230} className="logo" />
+            width={250}
+            height={210} className="logo" />
       </div>
 
       {/* Albums Section */}

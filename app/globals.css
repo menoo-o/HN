@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: #0d1015;
+  background-color: #0c1216;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,8 @@ body{
   position: absolute;
   top: 0px; /* Adjust this to position the logo higher or lower */
   left: 50%;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
   transform: translateX(-50%);
   z-index: 10; /* Ensures the logo stays above the hero image */
 }
