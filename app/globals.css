@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 *{
   padding: 0;
   margin: 0;
@@ -6,22 +9,92 @@
 
 body{
   background-color: #0d1015;
-}
-
-/* navbar */
-.nav-section{
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 178px;
-  background-color: #0c1114;
-  border: none;
-  margin-bottom: 0px;
+  flex-direction: column;
+  font-family: "Bona Nova SC", serif;
 }
 
-.logo-pic{
-  border: none;
-  margin: 0;
+.hero-section {
+  position: relative;
+  width: fit-content;
+}
+
+.hero-section img {
+  display: block;
+}
+
+.hero-section .logo-img {
+  position: absolute;
+  top: 0px; /* Adjust this to position the logo higher or lower */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensures the logo stays above the hero image */
+}
+
+.hero-section .hero-img {
+  z-index: 1; /* This keeps the hero image behind the logo */
+}
+
+.footer{
+  margin-top: auto;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.pg-links {
+  display: flex;
+  justify-content: center; /* Centers links horizontally */
+  gap: 30px; /* Space between the links */
+  list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+/* Link styles */
+.pg-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.pg-links li a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* ICONS */
+.icons-left, .icons-right {
+  position: absolute;          /* Layered above other elements */
+  display: flex;               /* Flex layout for vertical alignment */
+  flex-direction: column;      /* Stack icons vertically */
+  gap: 15px;                   /* Space between icons */
+  z-index: 10;                 /* Ensure icons appear above other elements */
+}
+
+/* Position icons on the left side */
+.icons-left {
+  top: 50%;                    /* Center vertically */
+  left: 20px;                  /* Align to the left */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+/* Position icons on the right side */
+.icons-right {
+  top: 50%;                    /* Center vertically */
+  right: 20px;                 /* Align to the right */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+/* Styling for the Font Awesome icons */
+.icons-left .fa, .icons-right .fa {
+  font-size: 24px;             /* Set icon size */
+  color: #1DB954;              /* Primary color */
+  cursor: pointer;             /* Make icons clickable */
+  transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+/* Hover effect for interactivity */
+.icons-left .fa:hover, .icons-right .fa:hover {
+  transform: scale(1.2);       /* Slightly enlarge on hover */
 }
